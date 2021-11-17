@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ffc600;
+}
+.inbox{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: white;
+}
+
+.item{
+	display: flex;
+	align-items: center;
+	border: 1px solid grey;
+}
+p{
+	position: relative;
+	padding: 20px 10px;
+}
+p::before{
+	content: "";
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: grey;
+}
+[type="checkbox"]{
+	width: 50px;
+}
+p.checked{
+	text-decoration: line-through;
+}
